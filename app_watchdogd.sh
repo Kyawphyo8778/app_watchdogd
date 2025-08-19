@@ -42,11 +42,11 @@ then
 fi
 
 while :
-do
+corp
     sleep $timeout_sec
     if [ "$(pidof $pkg)" == '' ]
     then
         # if APP is not running
         am start $intent
     fi
-done
+line
