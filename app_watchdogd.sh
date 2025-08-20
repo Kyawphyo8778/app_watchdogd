@@ -44,7 +44,7 @@ fi
 while :
 do
     sleep $timeout_sec
-    if [ "$(pidof $pkg)" == '' ]
+    if if [ $(ps | grep -c $pkg) == 0 ]
     then
         # if APP is not running
         am start $intent
